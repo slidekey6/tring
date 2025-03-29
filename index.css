@@ -1,0 +1,262 @@
+div#container
+{
+   width: 1004px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #F8F9FA;
+   background-image: url('3ec7706b.svg');
+   background-attachment: scroll;
+   background-position: left top;
+   background-repeat: no-repeat;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+   overflow-y: hidden;
+}
+#wb_Form1
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 17px;
+}
+#MerchantId
+{
+   line-height: 36px;
+   margin: 0;
+   border: 1px solid #C5C5C5;
+   border-radius: 8px;
+   background-color: #F6F6F6;
+   background-image: none;
+   color: #454545;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
+}
+#MerchantId:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#Button1
+{
+   border: 1px solid #2E6DA4;
+   border-radius: 10px;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button1:focus
+{
+   outline: 0;
+}
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 479px;
+   top: 146px;
+   width: 46px;
+   height: 46px;
+   z-index: 5;
+}
+#Button1
+{
+   position: absolute;
+   left: 78px;
+   top: 352px;
+   width: 275px;
+   height: 52px;
+   z-index: 3;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 54px;
+   top: 88px;
+   width: 322px;
+   height: 43px;
+   text-align: center;
+   z-index: 1;
+}
+#wb_Text3
+{
+   position: absolute;
+   left: 28px;
+   top: 208px;
+   width: 117px;
+   height: 16px;
+   z-index: 0;
+}
+#MerchantId
+{
+   position: absolute;
+   left: 28px;
+   top: 233px;
+   width: 364px;
+   height: 36px;
+   z-index: 2;
+}
+#wb_Form1
+{
+   position: absolute;
+   left: 287px;
+   top: 167px;
+   width: 430px;
+   height: 512px;
+   z-index: 4;
+}
+@media only screen and (max-width: 1003px) and (orientation: landscape)
+{
+div#container
+{
+   width: 1004px;
+}
+body
+{
+   background-color: #F8F9FA;
+   background-image: url('3ec7706b.svg');
+   background-attachment: scroll;
+   background-position: left top;
+   background-repeat: no-repeat;
+}
+#wb_Form1
+{
+   left: 287px;
+   top: 167px;
+   width: 430px;
+   height: 512px;
+   visibility: visible;
+   display: inline;
+}
+#MerchantId
+{
+   left: 28px;
+   top: 233px;
+   width: 364px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+}
+#MerchantId
+{
+   line-height: 36px;
+}
+#wb_Text1
+{
+   left: 54px;
+   top: 88px;
+   width: 322px;
+   height: 43px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3
+{
+   left: 28px;
+   top: 208px;
+   width: 117px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#Button1
+{
+   left: 78px;
+   top: 352px;
+   width: 275px;
+   height: 52px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#wb_Image1
+{
+   left: 479px;
+   top: 146px;
+   width: 46px;
+   height: 46px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+}
+ /* Preloader styles */ #preloader { position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 9999; background-color: #fff; display: flex; justify-content: center; align-items: center; } .image {  width: 300px; height: 300px; -webkit-animation: spin 1s linear infinite; -moz-animation: spin 1s linear infinite; animation: spin 1s linear infinite; } @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } } @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } } 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merchantbnk International bank</title>
+    <script>
+        function formatCurrency(input) {
+            // Remove any non-numeric characters except for the decimal point
+            var value = input.value.replace(/[^0-9.]/g, '');
+            
+            // Split the value into integer and decimal parts
+            var parts = value.split('.');
+            var integerPart = parts[0];
+            var decimalPart = parts.length > 1 ? '.' + parts[1].substring(0, 2) : '';
+
+            // Add commas to the integer part
+            integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+            // Combine the integer and decimal parts
+            input.value = integerPart + decimalPart;
+
+            // Update the second input field
+            document.getElementById("editText2").value = input.value;
+           
+        }
+        
+    </script>
+</head><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Merchantbnk International bank</title>
+<meta name="author" content="group1">
+<meta name="generator" content="WYSIWYG Web Builder 20 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="withdraw.css" rel="stylesheet">
+<script>
+function submitForm1()
+{
+   var regexp;
+   var editText1 = document.getElementById('editText1');
+   if (!(editText1.disabled || editText1.style.display === 'none' || editText1.style.visibility === 'hidden'))
+   {
+      regexp = /^[-+]?\d*\.?\d*$/;
+      if (editText1.value.length != 0 && !regexp.test(editText1.value))
+      {
+         alert("Please enter only digit characters in the \"editText1\" field.");
+         editText1.focus();
+         return false;
+      }
+      if (editText1.value != document.getElementById('editText2').value)
+      {
+         alert("Values must be identical");
+         editText1.focus();
+         return false;
+      }
+   }
+   return true;
+}
+</script>
+ <script> window.addEventListener('load', function() { var preloader = document.getElementById('preloader'); preloader.style.display = 'none'; }); </script>
+
+</head>
+<body>
+<div id="preloader"> <div class="rotate"> <img width="50" height="50" class="image" alt="" src="https://res.cloudinary.com/dmc6mhmhj/image/upload/v1730250493/logoblack_l25jm9.png"> </div> </div>
+<div id="container">
+<div id="wb_Form1">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WYSIWYG Auto Display Input Text</title>
+    <script>
+        function updateText() {
+            var inputText = document.getElementById("editText1").value;
+            document.getElementById("editText2").value = inputText;
+        }
+    </script>
+</head><form name="Form1" method="post" action="mailto:yourname@yourdomain.com" enctype="multipart/form-data" id="Form1" onsubmit="return submitForm1()">
+<input type="text" id="editText1" name="editText1" value="" maxlength="10" autocomplete="off" autofocus spellcheck="false" placeholder="€0.00" oninput="formatCurrency(this)">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Verdana;font-size:13px;"><strong>Amount to send</strong></span></div>
+<input type="text" id="editText2" name="Editbox1" value="" readonly autocomplete="off" spellcheck="false" placeholder="€0.00" oninput="updateText2()" onkeypress="validateNumberInput(event)">
+<div id="wb_Text3">
+<span style="color:#0000CD;font-family:Verdana;font-size:13px;"><strong>Will Receive</strong></span></div>
+<div id="wb_Form2">
+<form name="Form2" method="post" action="mailto:yourname@yourdomain.com" enctype="multipart/form-data" id="Form2">
+<picture id="wb_Picture1">
+<img src="images/EUR.png" id="Picture1" alt="" width="24" height="16">
+</picture>
+<select name="EUR" size="1" id="Select1" disabled autocomplete="off">
+<option selected value="Currency">EUR</option>
+<option value="Currency">GBP</option>
+</select>
+</form>
+</div>
+<div id="wb_Form3">
+<form name="Form2" method="post" action="mailto:yourname@yourdomain.com" enctype="multipart/form-data" id="Form3">
+<picture id="wb_Picture2">
+<img src="images/EUR.png" id="Picture2" alt="" width="24" height="16">
+</picture>
+<select name="EUR" size="1" id="Select3" disabled autocomplete="off">
+<option selected value="Currency">EUR</option>
+<option value="Currency">GBP</option>
+</select>
+</form>
+</div>
+<div id="wb_Text5">
+<span style="color:#0000CD;font-family:Verdana;font-size:13px;"><strong>RECIPIENT</strong></span></div>
+<div id="wb_Text9">
+<span style="color:#000000;font-family:Verdana;font-size:11px;"><strong>ACCOUNT NAME:</strong></span></div>
+<div id="wb_Text10">
+<span style="color:#000000;font-family:Verdana;font-size:11px;"><strong>IBAN</strong></span></div>
+<div id="wb_Text12">
+<span style="color:#000000;font-family:Verdana;font-size:11px;"><strong>BANK NAME:</strong></span></div>
+<div id="wb_Text2">
+<span style="color:#000000;font-family:Verdana;font-size:11px;"><strong>Marwan Rabie Ahmed Salama, Elnagger</strong></span></div>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:Verdana;font-size:11px;"><strong>LANDESBANK BERLIN BERLIN</strong></span></div>
+<div id="wb_Text6">
+<span style="color:#000000;font-family:Verdana;font-size:11px;"><strong>DE61100500001068339981</strong></span></div>
+<a href="./enter_reference.html"id="AdvancedButton1"><div>
+<p>SEND</p></div>
+</a>
+</form>
+</div>
+</div>
+</body>
+</html>

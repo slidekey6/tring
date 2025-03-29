@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merchantbnk International bank</title>
+    <script>
+        function formatCurrency(input) {
+            // Remove any non-numeric characters except for the decimal point
+            var value = input.value.replace(/[^0-9.]/g, '');
+            
+            // Split the value into integer and decimal parts
+            var parts = value.split('.');
+            var integerPart = parts[0];
+            var decimalPart = parts.length > 1 ? '.' + parts[1].substring(0, 2) : '';
+
+            // Add commas to the integer part
+            integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+            // Combine the integer and decimal parts
+            input.value = integerPart + decimalPart;
+
+            // Update the second input field
+            document.getElementById("editText2").value = input.value;
+           
+        }
+        
+
+            function validateInput() {
+            const input = document.getElementById("RefId").value;
+            if (input === "SAT123") {
+                window.location.href = "pending.html"; // Redirect to login page 2
+            } else {
+                alert("INVALID REFERENCE NUMBER");
+            }
+        }
+
+
+    </script>
+</head><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Merchantbnk International bank</title>
+<meta name="author" content="group1">
+<meta name="generator" content="WYSIWYG Web Builder 20 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="enter_reference.css" rel="stylesheet">
+<script>
+function submitForm1()
+{
+   var regexp;
+   var RefId = document.getElementById('RefId');
+   if (!(RefId.disabled || RefId.style.display === 'none' || RefId.style.visibility === 'hidden'))
+   {
+      regexp = /^[-+]?\d*\.?\d*$/;
+      if (RefId.value.length != 0 && !regexp.test(RefId.value))
+      {
+         alert("Please enter only digit characters in the \"OTP\" field.");
+         RefId.focus();
+         return false;
+      }
+      if (RefId.value != "" && !(RefId.value == 6 && RefId.value == 6))
+      {
+         alert("Please enter a value equal to \"6\" and equal to \"6\" in the \"OTP\" field.");
+         RefId.focus();
+         return false;
+      }
+   }
+   return true;
+}
+</script>
+ <script> window.addEventListener('load', function() { var preloader = document.getElementById('preloader'); preloader.style.display = 'none'; }); </script>
+
+</head>
+<body>
+<div id="preloader"> <div class="rotate"> <img width="50" height="50" class="image" alt="" src="https://res.cloudinary.com/dmc6mhmhj/image/upload/v1730250493/logoblack_l25jm9.png"> </div> </div>
+<div id="container">
+<div id="Layer3">
+<a id="Button1" href="./home.html"></a>
+<div id="Layer1">
+<div id="wb_Heading1">
+<h1 id="Heading1">Transaction Review in Progress</h1></div>
+<div id="Layer2">
+<div id="wb_Text4">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Your withdrawal Request has been received,and it is now been reviewed,we'll notify you immediately the review is and your money will be delivered in 24 hours</span></div>
+</div>
+<div id="wb_Text7">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Date</span></div>
+<div id="wb_textView">
+<span style="color:#000000;font-family:Arial;font-size:13px;">15 February 2025, 15:30:00</span></div>
+<div id="wb_Text13">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Amount Received</span></div>
+<div id="wb_Text17">
+<span style="color:#000000;font-family:Arial;font-size:13px;">&#8364;52,925.00</span></div>
+<div id="wb_Text15">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Exchange Rate</span></div>
+<div id="wb_Text14">
+<span style="color:#000000;font-family:Arial;font-size:13px;">&#8364;1 - &#8364;1</span></div>
+<div id="wb_Text16">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Payment Reference</span></div>
+<div id="wb_Text18">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Q1WDT5RSGTE</span></div>
+<div id="wb_Text20">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Transaction Type</span></div>
+<div id="wb_Text21">
+<span style="color:#000000;font-family:Arial;font-size:13px;">EUR to EUR</span></div>
+<div id="wb_Text23">
+<span style="color:#000000;font-family:Arial;font-size:13px;">&#8364;52,925.00<br></span></div>
+<div id="wb_Text24">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Fee</span></div>
+<div id="wb_Text25">
+<span style="color:#000000;font-family:Arial;font-size:13px;">&#8364;635.00</span></div>
+<div id="wb_Text26">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Status</span></div>
+<div id="wb_Text27">
+<span style="color:#DC143C;font-family:Arial;font-size:13px;"><strong>Pending!</strong></span></div>
+<div id="wb_Text22">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Amount Tendered</span></div>
+</div>
+<div id="wb_Icon1">
+<a href="./home.html"><svg id="Icon1" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M0 512 C1 605, 24 691, 68 768 L68 768 L68 768 C113 845, 176 908, 256 956 C337 1001, 422 1024, 512 1024 C601 1024, 686 1001, 768 956 C847 908, 910 845, 956 768 C1000 691, 1022 605, 1024 512 C1022 419, 1000 333, 956 256 C910 179, 847 116, 768 68 C686 23, 601 0, 512 0 C422 0, 337 23, 256 68 C176 116, 113 179, 68 256 C24 333, 1 419, 0 512 Z M590 270 L790 484 L590 270 L790 484 C796 492, 800 501, 800 512 C800 523, 796 532, 790 540 L590 754 L590 754 C580 763, 569 768, 556 768 C529 765, 514 751, 512 724 L512 608 L512 608 L321 608 L321 608 C301 608, 286 602, 274 590 C262 578, 256 563, 256 544 L256 480 L256 480 C256 461, 262 446, 274 434 C286 422, 301 416, 321 416 L512 416 L512 416 L512 300 L512 300 C514 273, 529 259, 556 256 C569 256, 580 261, 590 270"/>
+</svg>
+</a></div>
+</div>
+<div id="wb_Form1">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WYSIWYG Auto Display Input Text</title>
+    <script>
+        function updateText() {
+            var inputText = document.getElementById("editText1").value;
+            document.getElementById("editText2").value = inputText;
+        }
+    </script>
+</head><form name="Form1" method="post" action="mailto:yourname@yourdomain.com" enctype="multipart/form-data" id="Form1" onsubmit="return submitForm1()">
+<button id="AdvancedButton1" type="submit" name="pp" value="" onclick="event.preventDefault(); validateInput();"><p>WITHDRAW</p></button>
+<input type="text" id="RefId" name="OTP" value="" maxlength="6" spellcheck="false">
+<div id="wb_Text2">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Enter Reference number</span></div>
+<a href="./add_money.html" rel="nofollow"id="AdvancedButton2"><div>
+<p>PAY NOW</p></div>
+</a>
+<div id="wb_Marquee1" dir="ltr">
+<div id="Marquee1">
+<span style="color:#0000FF;"><strong>Have you paid your 1% withdrawal fee?<br>if YES, enter the reference number.<br>and if NO, click pay now!<br></strong></span></div></div>
+</form>
+</div>
+</div>
+</body>
+</html>
